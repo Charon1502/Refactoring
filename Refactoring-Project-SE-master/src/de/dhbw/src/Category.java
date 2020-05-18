@@ -4,15 +4,15 @@ public enum Category {
 
 	CHILDREN(2), REGULAR(0), NEW_RELEASE(1);
 	
-	private int category;
+	private int priceCode;
 	
 	
-	private Category(int category) {
-		this.category = category;
+	private Category(int priceCode) {
+		this.priceCode = priceCode;
 	}
 	
 	
-	public int getCategory() {
-		return category;
+	public int getPriceCode() {
+		return priceCode;
 	}
 }

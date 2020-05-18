@@ -26,4 +26,8 @@ public class Movie {
     public String getTitle() {
         return title;
     };
+    
+    public Category getCategory() {
+    	return category;
+    }
 }
