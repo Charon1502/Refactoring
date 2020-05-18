@@ -9,7 +9,7 @@ class Customer {
     private Vector rentals = new Vector();
 
     
-    public Customer (String newname){
+    public Customer(String newname) {
         name = newname;
     };
     
@@ -19,7 +19,7 @@ class Customer {
     };
     
 
-    public String getName (){
+    public String getName() {
         return name;
     };
     

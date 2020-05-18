@@ -25,7 +25,7 @@ public class Movie {
     }
     
     
-    public String getTitle (){
+    public String getTitle() {
         return title;
     };
 }
