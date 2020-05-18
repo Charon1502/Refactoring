@@ -3,18 +3,13 @@ package de.dhbw.src;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
-import de.dhbw.src.Customer;
 
 class CustomerTest {
 
 	@Test
 	void testForStatement() {
-		assertTrue(true);
+		Customer customer = new Customer("Nico");
+		assertNotNull(customer.statement());
 	}
 	
-	@Test
-	void testForAmountFor() {
-		assertTrue(true);
-	}
-
 }
