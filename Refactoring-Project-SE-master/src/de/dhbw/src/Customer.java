@@ -61,7 +61,7 @@ class Customer {
             case CHILDREN:
                 return 1.5;
             default: 
-                return -1;
+                return 0;
 
         }
     }
