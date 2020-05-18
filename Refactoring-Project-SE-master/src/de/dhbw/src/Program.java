@@ -20,7 +20,7 @@ public class Program {
         Customer c1 = new Customer("joe");
         c1.addRental(r1);   c1.addRental(r2);   
         System.out.println("Let's get the Statement");
-        result = c1.statement();
+        result = c1.createOutput();
         System.out.println(result);
     }
 }

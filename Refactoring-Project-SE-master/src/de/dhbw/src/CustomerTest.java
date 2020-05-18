@@ -9,7 +9,7 @@ class CustomerTest {
 	@Test
 	void testForStatement() {
 		Customer customer = new Customer("Nico");
-		assertNotNull(customer.statement());
+		assertNotNull(customer.createOutput());
 	}
 	
 }

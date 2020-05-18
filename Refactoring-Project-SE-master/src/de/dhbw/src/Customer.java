@@ -24,7 +24,7 @@ class Customer {
     };
     
     
-    public String statement() {
+    public String createOutput() {
         double totalAmount = 0;
         int frequentRenterPoints = 0;
         Enumeration<Rental> enum_rentals = rentals.elements();	    
@@ -35,7 +35,7 @@ class Customer {
             double thisAmount = 0;
             Rental each = (Rental) enum_rentals.nextElement();
             //determine amounts for each line
-            thisAmount = amountFor(each);
+            thisAmount = resolveAmount(each);
             // add frequent renter points
             frequentRenterPoints ++;
             // add bonus for a two day new release rental
@@ -52,7 +52,7 @@ class Customer {
     }
     
     
-    private double amountFor(Rental rental) {
+    private double resolveAmount(Rental rental) {
         switch (rental.getMovie().getCategory()) {
             case REGULAR:
                 return 2;
